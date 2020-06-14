@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+#app,
+.wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content-box{
+    position: absolute;
+    left:200px;
+    right: 0;
+    bottom: 0;
+    top:70px;
+    padding-bottom: 30px;
+    background: #f0f0f0;
+    transition: left .3s ease-in-out;
+    -webkit-transition: left .3s ease-in-out;
+}
+
+.content-collapse{
+    left: 65px;
+}
+
+.content{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow-y: scroll;
+}
+/* 加载动画 */
+.loading-enter,
+.loading-leave-to{
+    opacity: 0;
+    position: absolute;
+}
+
+.loading-enter-active,
+.loading-leave-active{
+    transition: all 0.4s ease-in-out;
+}
+
+/* 内容切换动画 */
+.move-enter,
+.move-leave-to{
+    /* transform: translateX(150%); */
+    opacity: 0;
+    position: absolute;
+}
+
+.move-enter-active,
+.move-leave-active{
+    transition: all 0.4s ease-in-out;
+}
+
+.crumbs{
+    margin:5px 0;
+}
+
+.handle-box{
+    margin-bottom:10px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.handle-box .handle-input{
+    width: 300px;
+    display: inline-block;
+}
+.handle-box .mr10{
+    margin-right: 10px;
+}
+.handle-box .fontColor{
+    font-size: 14px;
+    color: #606266;
+}
+.pagination{
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
